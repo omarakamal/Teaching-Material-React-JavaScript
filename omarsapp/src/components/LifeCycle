@@ -1,0 +1,65 @@
+// import React from "react";
+// //import { unmountComponentAtNode } from "react-dom";
+// import randomcolor from "randomcolor";
+
+// class LifeCycle extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       count: 0,
+//       color: "",
+//     };
+//     this.increment = this.increment.bind(this);
+//     //this.handleClick = this.handleClick.bind(this);
+//   }
+
+//   // handleClick() {
+//   //   unmountComponentAtNode(document.getElementById("root"));
+//   // }
+//   increment() {
+//     this.setState((prevState) => {
+//       return {
+//         count: prevState.count + 1,
+//       };
+//     });
+//   }
+
+//   // this method is invoked (called) only when the component is mounted
+//   // (created for the first time)
+//   // componentDidMount() {
+//   //   // anything like, reading data from server's database
+//   //   console.log("In componentDidMount");
+//   // }
+
+//   //this method is invoked as soon as any of the props or states is updated
+//   componentDidUpdate(prevProps, prevState) {
+//     // This function can either have "no argument"
+//     // OR
+//     // Can have "two arguments"... not "1 argument", otherwise it will give you headache
+//     //write anything that you want to do on update
+//     // The order of parameters can not be changed. It has to be like (prevProps, prevState)
+
+//     // console.log(
+//     //   "prevState " + prevState.count + "current state " + this.state.count
+//     // );
+//     if (prevState.count !== this.state.count) {
+//       const randColor = randomcolor(); // this function generates colors randomly
+//       this.setState({ color: randColor });
+//     }
+//   }
+
+//   // componentWillUnmount() {
+//   //   console.log("In unmount function");
+//   // }
+//   render() {
+//     //console.log("In render function");
+//     return (
+//       <div>
+//         <h1 style={{ color: this.state.color }}>{this.state.count}</h1>
+//         <button onClick={this.increment}>Increment!</button>
+//       </div>
+//     );
+//   }
+// }
+
+// export default LifeCycle;
